@@ -40,3 +40,17 @@ print(name + "는 어른일까요? " + str(is_adult)) # 불리안형도 str로 �
 # 주석: 프로그램에 포함되어 있지만, 실제로 실행되지 않는 코드
 # #: 한 줄 주석
 # '''주석''': 여러 줄 주석
+
+'''
+Quiz) 변수를 이용하여 다음 문장을 출력하시오
+변수명: station
+변수값: "사당", "신도림", "인천공항" 순서대로 입력
+출력 문장: XX 행 열차가 들어오고 있습니다.
+'''
+sentence = "행 열차가 들어오고 있습니다."
+station = "사당"
+print(station, sentence)
+station = "신도림"
+print(station, sentence)
+station = "인천공항"
+print(station, sentence)
