@@ -1,0 +1,27 @@
+diff a/junior/.vscode/practice.py b/junior/.vscode/practice.py	(rejected hunks)
+@@ -74,4 +74,22 @@
+ print((3 > 0) or (3 > 5)) # True
+ print((3 > 0) | (3 > 5)) # True
+ print(5 > 4 > 3) # 연속 비교(순차 비교로 결과 도출) = True
+-print(5 > 4 > 7) # False
+\ No newline at end of file
++print(5 > 4 > 7) # False
++
++print(2 + 3 * 4) # 14
++print((2 + 3) * 4) # 20
++number = 2 + 3 * 4 # 14
++print(number)
++number = number + 2 # 16
++print(number)
++number += 2 # 18
++print(number)
++number *= 2 # 36
++print(number)
++number /= 2 # 18
++print(number)
++number -= 2 # 16
++print(number)
++#number %= 2 # 0
++number %= 5 # 1
++print(number)
+\ No newline at end of file
