@@ -105,3 +105,12 @@ from math import * # math 라이브러리 안의 모든 것 이용
 print(floor(4.99)) # 내림 4
 print(ceil(3.14)) # 올림 4
 print(sqrt(16)) # 제곱근 4
+
+from random import *
+print(random()) # 0.0 ~ 1.0 미만 범위의 임의의 값 생성
+print(random() * 10) # 0.0 ~ 10.0 미만
+print(int(random() * 10)) # 0 ~ 10 미만
+print(int(random() * 10) + 1) # 1 ~ 10 이하
+print(int(random() * 45) + 1) # 1 ~ 45 이하
+print(randrange(1, 46)) # 1 ~ 46 미만 범위의 임의의 값
+print(randint(1, 45)) # 1 ~ 45 이하 범위의 임의의 값
