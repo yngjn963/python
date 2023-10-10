@@ -128,3 +128,13 @@ Quiz) 당신은 최근에 코딩 스터디 모임을 새로 만들었습니다.
 오프라인 스터디 모임 날짜는 매월 x일로 선정되었습니다.
 '''
 print("오프라인 스터디 모임 날짜는 매월", str(randint(4, 28)) + "일로 선정되었습니다.")
+
+sentence = '나는 소년입니다'
+print(sentence)
+sentence2 = "파이썬은 쉬워요"
+print(sentence2)
+sentence3 = """
+나는 소년이고,
+파이썬은 쉬워요
+""" # 여러 줄의 문자열
+print(sentence3)
