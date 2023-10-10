@@ -149,3 +149,18 @@ print("생년월일: " + jumin[:6]) # 인덱스 처음부터 6 전까지
 # print("뒤 7자리: " + jumin[7:14])
 print("뒤 7자리: " + jumin[7:]) # 인덱스 7 부터 끝까지
 print("뒤 7자리(뒤에서부터): " + jumin[-7:]) # 인덱스 맨 뒤에서 7번째부터 끝까지
+
+python = "Python is Amazing"
+print(python.lower())
+print(python.upper())
+print(python[0].isupper())
+print(len(python))
+print(python.replace("Python", "Java"))
+
+index = python.index("n")
+print(index)
+index = python.index("n", index + 1) # 시작위치 지정
+print(python.find("Python"))
+print(python.find("Java")) # -1
+# print(python.index("Python")) # ValueError. 이후 프로그램을 실행하지 않고 종료.
+print(python.count("n")) # n 개수
