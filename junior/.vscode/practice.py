@@ -212,3 +212,25 @@ print("Redd\bApple") # RedApple
 
 # \t: 탭
 print("Red\tApple") # Red     Apple
+
+'''
+Quiz) 사이트별로 비밀번호를 만들어 주는 프로그램을 작성하시오
+
+예) http://naver.com
+규칙1: http:// 부분은 제외 => naver.com
+규칙2: 처음 만나는 점(.) 이후 부분은 제외 => naver
+규칙3: 남은 글자 중 처음 세자리(nav) + 글자 개수(5) + 글자 내 'e' 개수 + "!"로 구성
+
+(출력문 예제)
+생성된 비밀번호: nav51!
+'''
+site = "http://naver.com"
+# print(site.index("/"))
+# print(site.index("/") + 1)
+# print(site.index("/", site.index("/") + 1))
+# print(site[site.index("/", site.index("/") + 1) + 1:])
+# print(site.index("http://") + 7)
+# print(site[site.index("http://") + 7:site.index(".com")])
+# print(site[site.index("http://") + 7:site.index(".com")][0:3])
+pw = site[site.index("http://") + 7:site.index(".com")] # .com이 아닌 다른 사이트 경우를 생각하면 수정 필요
+print(f"생성된 비밀번호: {pw[0:3]}{len(pw)}{pw.count('e')}!")
