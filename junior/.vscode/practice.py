@@ -291,3 +291,41 @@ print(mix_list)
 num_list = [5,2,4,3,1]
 num_list.extend(mix_list)
 print(num_list)
+
+# 사전
+cabinet = {3:"유재석", 100:"김태호"}
+print(cabinet[3])
+print(cabinet[100])
+print(cabinet.get(3))
+# print(cabinet[5]) # 오류로 프로그램 종료
+print(cabinet.get(5)) # 오류가 아닌 None 으로 출력
+print(cabinet.get(5, "사용 가능")) # 해당 Key가 없을 경우 None 값 대신 사용 가능이라는 값을 반환
+print(3 in cabinet) # True
+print(5 in cabinet) # False
+
+cabinet = {"A-3":"유재석", "B-100":"김태호"}
+print(cabinet["A-3"])
+print(cabinet["B-100"])
+
+# 새 손님
+print(cabinet)
+cabinet["A-3"] = "김종국" # A-3에 대한 값 변경
+cabinet["C-20"] = "조세호"
+print(cabinet)
+
+# 떠난 손님(손님 지우기)
+del cabinet["A-3"]
+print(cabinet)
+
+# 사용 중인 Key
+print(cabinet.keys()) # dict_keys(['B-100', 'C-20'])
+
+# 사용 중인 Value
+print(cabinet.values()) # dict_values(['김태호', '조세호'])
+
+# 사용 중인 Key, Value 쌍
+print(cabinet.items()) # dict_items([('B-100', '김태호'), ('C-20', '조세호')])
+
+# 캐비넷 모두 비우기
+cabinet.clear()
+print(cabinet) # {}
