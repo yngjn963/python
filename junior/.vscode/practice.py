@@ -329,3 +329,18 @@ print(cabinet.items()) # dict_items([('B-100', '김태호'), ('C-20', '조세호
 # 캐비넷 모두 비우기
 cabinet.clear()
 print(cabinet) # {}
+
+# 튜플: 변경할 수 없지만 성능이 좋다.
+menu = ("돈까스", "치즈까스")
+print(menu[0])
+print(menu[1])
+
+# menu.add("생선까스") # 오류
+
+name = "김종국"
+age = 20
+hobby = "코딩"
+print(name, age, hobby)
+
+(name, age, hobby) = ("김종국", 20, "코딩") # 서로 다른 변수를 한 번에 선언
+print(name, age, hobby)
