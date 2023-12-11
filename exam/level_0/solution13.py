@@ -20,6 +20,21 @@ result = 1
 
 def solution(array):
     answer = 0
+
+    array_range = [0] * (max(array) + 1)
+
+    for num in array:
+        array_range[num] += 1
+
+    array_range_sort = []
+    array_range_sort.extend(array_range)
+    array_range_sort.sort(reverse=True)
+    array_range_sort.sort(reverse=True)
+    if len(array_range_sort) > 1 and array_range_sort[0] == array_range_sort[1]:
+        answer = -1
+    else:
+        answer = array_range.index(max(array_range))
+
     return answer
 
-solution([1, 2, 3, 3, 3, 4])
+print(solution([1, 1, 2, 2]))
